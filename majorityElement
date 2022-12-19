@@ -1,0 +1,21 @@
+class Solution {
+    public int majorityElement(int[] nums) {
+        // HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
+        // int count=nums.length/2;
+        // int ans;
+        // for(int i:nums.length){
+        //     if(!map.containsKey(nums[i])){
+        //         map.put(nums[i],1);
+        //     }else{
+        //         int value=map.getKey(nums[i]);
+        //         map.put(nums[i],value+1);
+        //     }
+        //     if(value>count){
+        //         ans=map.getKey();
+        //     }
+        // }
+        // return ans;
+        Arrays.sort(nums);
+        return nums[nums.length/2];
+    }
+}
